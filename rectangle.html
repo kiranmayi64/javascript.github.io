@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">	
+    <title>Calculate Area and Perimeter of Rectangle</title>
+	
+    <script>
+        var len = prompt("Enter the length of the Rectangle");
+		while (len === "" && isInteger(len))
+		{
+			
+				alert("Please Enter the Length of the Rectangle. It should not be Empty!");
+				len = prompt("Enter the length of the Rectangle");
+			
+		}
+        len = parseFloat(len);
+		
+        var breadth = prompt("Enter the breadth of the rectangle");
+		while (breadth === "")
+		{
+			
+				alert("Please Enter the Breadth of the Rectangle. It should not be Empty!");
+				breadth = prompt("Enter the Breadth of the Rectangle");
+			
+		}
+        breadth = parseFloat(breadth);
+        var area = len*breadth;
+		var perimeter  = 2*(len+breadth);
+        area = parseInt(area);
+		perimeter = parseInt(perimeter);
+        alert("Area of the Rectangle = " + area + "\nPerimeter of the Rectangle = " + perimeter);
+		
+    </script>
+</head>
+<body>
+    <main>
+	<center>
+        <h1>Thanks for using the Area and Perimeter Calculation of the Rectangle application</h1>
+		<h2><a href = "rectangle.html">Click Here</a>&nbsp;&nbsp;To calculate again</h2>
+	</center>
+    </main>
+</body>
+</html>
